@@ -6,7 +6,7 @@ int Binary_Search(int arr[] , int l , int r , int key)
     if(l==r && arr[l]!=key){
         return -1;
     }
-    int mid = (l+r)/2;
+    int mid = l + (r-l)/2;
     if(arr[mid]==key){
         return mid;
     }
